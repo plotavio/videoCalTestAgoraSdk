@@ -1,5 +1,6 @@
 import "expo-dev-client";
 import React, { useEffect, useRef, useState } from "react";
+import AgoraUIKit from "agora-rn-uikit";
 import {
   ChannelProfileType,
   ClientRoleType,
@@ -27,7 +28,7 @@ import {
 } from "react-native-paper";
 import { DarkTheme, NavigationContainer } from "@react-navigation/native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-
+import { captureRef, captureScreen } from "react-native-view-shot";
 const screen = Dimensions.get("screen");
 const window = Dimensions.get("window");
 
